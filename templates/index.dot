@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="microblog">
+	<meta name="description" content="{{=it.blog.description}}">
+	<meta name="author" content="{{=it.blog.author}}">
+	<link rel="stylesheet" href="/static?name=style.css">
+	<link rel="alternate" type="application/rss+xml" href="/feeds/rss.xml">
+	<link rel="icon" type="image/png" href="/static?name=favicon.png">
+	<title>{{=it.blog.title}}</title>
+	<meta name="keywords" content="{{=it.blog.keywords}}">
+</head>
+<body>
+<header>
+	<h1>{{=it.blog.title}}</h1>
+	<a id="rssbutton" href="/feeds/rss.xml"><img src="/static?name=feed_icon.svg"> Follow</a>
+</header>
+
+<main>
+{{~it.posts:post:postid}}
+	<article id="{{=post.index}}">
+		<span class="date">{{=post.sane_date()}}</span>
+		<span class="content">
+			{{=post.content}}
+		</span>
+	</article>
+{{~}}
+</main>
+<script src="/static?name=index.js">
+</script>
+</body>
+</html>
