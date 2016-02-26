@@ -13,7 +13,7 @@ header {
 header > h1 {
 	float: left;
 	font-size: 1.5em;
-	padding: 0;
+	padding: 0.25em;
 	margin: 0;
 }
 
@@ -33,6 +33,7 @@ header > h1 {
 article {
 	border-bottom: 1px solid #BDBDBD;
 	padding: 0.5em;
+	white-space: pre-line;
 }
 
 article > .date {

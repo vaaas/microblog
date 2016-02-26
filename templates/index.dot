@@ -5,11 +5,12 @@
 	<meta name="generator" content="microblog">
 	<meta name="description" content="{{=it.blog.description}}">
 	<meta name="author" content="{{=it.blog.author}}">
+	<meta name="keywords" content="{{=it.blog.keywords}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{=it.blog.title}}</title>
 	<link rel="stylesheet" href="/static?name=style.css">
 	<link rel="alternate" type="application/rss+xml" href="/feeds/rss.xml">
 	<link rel="icon" type="image/png" href="/static?name=favicon.png">
-	<title>{{=it.blog.title}}</title>
-	<meta name="keywords" content="{{=it.blog.keywords}}">
 </head>
 <body>
 <header>
